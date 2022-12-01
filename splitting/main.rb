@@ -1,3 +1,9 @@
+require_relative "employee.rb"
+require_relative "reportable.rb"
+require_relative "manager.rb"
+require_relative "intern.rb"
+
+
 employee1 = Employee.new({:first_name => "Majora", :last_name => "Carter", :salary => 80000, :active => true})
 employee1.print_info
 
