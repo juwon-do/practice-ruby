@@ -37,8 +37,12 @@ car1.honk_horn
 p car1
 car1.accelerate
 p car1
+car1.brake
+p car1
 
 bike1 = Bike.new
 bike1.ring_bell
 bike1.turn("south")
+p bike1
+bike1.brake
 p bike1
