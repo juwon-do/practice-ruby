@@ -1,11 +1,14 @@
+require "http"
+require "awesome_print"
+
 user_input = 0
-while 
+while true
   p "Enter a word(enter q to quit): "
   user_input = gets.chomp
   if user_input == "q"
     return
   end
-  require "http"
+  
 
   response = HTTP.get("https://api.wordnik.com/v4/word.json/#{user_input}/examples?includeDuplicates=false&useCanonical=false&limit=5&api_key=")
 
