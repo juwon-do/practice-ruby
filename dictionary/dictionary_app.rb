@@ -23,4 +23,10 @@ while true
   pp examples['examples'][0]['text']
   pp pronunciation[0]['raw']
   system("open", "#{audio[0]['fileUrl']}")
+
+  system("clear")
+  puts ""
+  puts ""
+  puts ""
+  puts ""
 end
